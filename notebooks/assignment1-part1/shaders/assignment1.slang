@@ -23,11 +23,8 @@ public float4 fillRed(uint2 tid)
  */
 public float4 fillGradient(uint2 tid, uint2 canvasSize)
 {
-    // TODO: Student implementation starts here.
-
-    return float4(1.0, 0.0, 1.0, 1.0);
-
-    // TODO: Student implementation ends here.
+    float2 pt = float2(tid) / float2(canvasSize);
+    return float4(pt.x, pt.y, 0.0, 1.0);
 }
 
 /**
